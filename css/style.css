@@ -1,0 +1,443 @@
+/* Font Online */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Font Offline */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../font/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../font/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../font/Montserrat-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+}
+
+.jumbotron {
+    background-image: url(../images/bg_nanas2.png);
+    background-size: cover;
+    height: 770px;
+    margin-top: -100px;
+    background-attachment: fixed;
+}
+
+.jumbotron h1 {
+    color: white;
+    margin-top: 320px;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 3px 2px 4px black;
+}
+
+.btn-black {
+    background-color: #000; /* Warna hitam */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Hapus border default */
+}
+
+.btn-black:hover {
+    background-color: #333; /* Warna hitam yang sedikit lebih terang untuk efek hover */
+    color: #fff;
+}
+
+
+/*------tentang------*/
+
+#tentang {
+    width: 100%;
+    padding: 0px;
+    margin-top: -30px;
+    padding-top: 55px;
+}
+
+/* tentang kami */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+#tentang h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#tentang p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#tentang .about-us img, 
+#tentang .our-values img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tentang .our-mission {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#tentang .our-values {
+    margin-top: 40px;
+}
+
+#tentang .our-values ul {
+    padding-left: 0;
+}
+
+#tentang .our-values li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+#tentang .our-values i {
+    color: #4CAF50;
+    font-size: 1.5rem;
+}
+
+
+/* Galeri */
+#grup {
+    padding-top: 55px;
+    background-color: #f0ebeb;
+    margin-left: -25px;
+}
+
+#grup .card {
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#grup .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#grup .card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+figure {
+  width: 450px;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  margin-left: -35px;
+  margin-bottom: -30px;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75);
+  transition: all 0.4s ease;
+}
+
+figcaption{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.6s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+figure:hover img{
+  filter: blur(4px) brightness(70%);
+}
+
+figure:hover figcaption{
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* .popup-gallery img {
+    width:100%;
+    height:100%;
+    opacity: 1;
+}
+
+.popup-gallery img:hover {
+    opacity: 0.7;
+} */
+
+/* Lokasi */
+#lokasi {
+    padding-top: 55px;
+    /* background-color: #c0c4cc; */
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    /* color: #424242; */
+    background-attachment: fixed;
+    height: 655px;
+}
+
+#lokasi h2, h5 {
+    color: black;
+    font-weight: 500;
+    text-shadow: 2px 1px 2px white;
+}
+
+/* Kontak */
+#kontak {
+    background-color: #343a40;
+    color: white;
+    padding: 50px 0;
+}
+
+#kontak h2 {
+    margin-bottom: 40px;
+}
+
+#kontak .col-md-3 h3,
+#kontak .col-md-6 h3 {
+    margin-bottom: 20px;
+}
+
+#kontak a {
+    color: white;
+    text-decoration: none;
+}
+
+#kontak a:hover {
+    color: #4CAF50;
+}
+
+#kontak .form-group input,
+#kontak .form-group textarea {
+    background-color: #495057;
+    border: none;
+    color: white;
+}
+
+#kontak .form-group input::placeholder,
+#kontak .form-group textarea::placeholder {
+    color: #adb5bd;
+}
+
+#kontak .btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#kontak .btn-primary:hover {
+    background-color: #45a049;
+}
+
+#sosmed .fa-2x {
+    transition: transform 0.3s;
+}
+
+#sosmed .fa-2x:hover {
+    transform: scale(1.2);
+}
+
+/* Smoth Scrool */
+html {scroll-behavior:smooth;}
+
+/* Back to Top */
+#backtotop {
+    z-index:999; 
+    display:inline-block; 
+    position:fixed; 
+    visibility:hidden; 
+    bottom:20px; 
+    right:20px; 
+    width:36px; 
+    height:36px; 
+    line-height:36px; 
+    font-size:16px; 
+    text-align:center; 
+    opacity:.2;
+}
+
+#backtotop img {
+    display:block; 
+    width:100%; 
+    height:100%; 
+    line-height:inherit;
+}
+
+#backtotop.visible {
+    visibility:visible; 
+    opacity:.5;
+}
+
+#backtotop:hover {
+    opacity:1;
+}
+
+#backtotop {
+    border-radius:50%;
+}
+
+#backtotop {
+    color:#FFFFFF; 
+    background-color:#8BAAD6;
+}
+
+
+/* Responsive untuk Smartphone dan layar maximal 400px*/
+@media (max-width: 800px) {
+
+    .jumbotron {
+        height: 480px;
+    }
+
+    .jumbotron h1 {
+        font-weight: 500;
+        font-size: 42px;
+        margin-top: 180px;
+    }
+
+    #wisata, #galeri, #lokasi, #kontak {
+        padding-top: 10px;
+    }
+
+    figure{
+        margin-left: 35px;
+        margin-bottom: 0px;
+    }
+
+    figcaption{
+        opacity: 1;
+        position: absolute;
+    }
+
+    #galeri h3 {
+        text-shadow: 2px 1px 2px black;
+    }
+
+    /* .popup-gallery img {
+        opacity: 1;
+    } */
+
+    #lokasi h2, h5 {
+        color: white;
+        text-shadow: 2px 1px 2px black;
+    }
+
+    #lokasi iframe {
+        width: 300px;
+        height: 225px;
+    }
+
+    #kontak {
+        text-align: center;
+    }
+
+}
+
+
+/* Responsive untuk Smartphone dan layar maximal 400px*/
+@media screen and (max-width: 480px) {
+
+    .jumbotron {
+        /* background-size: 100%; */
+        height: 750px;
+    }
+
+    .jumbotron h1 {
+        font-weight: 500;
+        font-size: 36px;
+        margin-top: 280px;
+    }
+
+    #wisata, #galeri, #lokasi, #kontak {
+        padding-top: 10px;
+    }
+
+    figure {
+      width: 370px;
+      height: 250px;
+      cursor: pointer;
+      position: relative;
+      margin-left: -5px;
+      margin-bottom: -30px;
+    }
+
+    figcaption{
+        opacity: 1;
+        position: absolute;
+    }
+
+    /* .popup-gallery img {
+        margin: 2px;
+        opacity: 1;
+    } */
+
+    #galeri h3 {
+        text-shadow: 2px 1px 2px black;
+    }
+
+    #lokasi h2, h5 {
+        color: white;
+        text-shadow: 2px 1px 2px black;
+    }
+
+    #lokasi iframe {
+        width: 300px;
+        height: 225px;
+    }
+
+    #kontak {
+        text-align: center;
+    }
+
+    #kontak #sosmed a {
+        opacity: 1;
+        margin-left: : 2px;
+    }
+}
